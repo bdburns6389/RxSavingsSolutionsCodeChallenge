@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RxSavingsSolutionsCodeChallenge.Domain;
 using RxSavingsSolutionsCodeChallenge.Dtos;
+using RxSavingsSolutionsCodeChallenge.Helpers;
 
 namespace RxSavingsSolutionsCodeChallenge.Controllers
 {
@@ -34,6 +35,9 @@ namespace RxSavingsSolutionsCodeChallenge.Controllers
         {
             var inputLatitude = requestCoordinates.Latitude;
             var inputLongitude = requestCoordinates.Longitude;
+
+
+            var distance = HaversineFormula.DistanceBetween(39.24517, -95.00031, 39.00175, -95.68697);
             return "Post";
         }
     }

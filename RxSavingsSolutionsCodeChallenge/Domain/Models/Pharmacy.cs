@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace RxSavingsSolutionsCodeChallenge.Domain.Models
+﻿namespace RxSavingsSolutionsCodeChallenge.Domain.Models
 {
     public class Pharmacy
     {

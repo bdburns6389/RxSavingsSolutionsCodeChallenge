@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RxSavingsSolutionsCodeChallenge.Domain;
-using RxSavingsSolutionsCodeChallenge.Domain.Models;
 using RxSavingsSolutionsCodeChallenge.Dtos;
 using RxSavingsSolutionsCodeChallenge.Helpers;
 

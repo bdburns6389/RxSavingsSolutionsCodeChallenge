@@ -13,7 +13,7 @@ namespace RxSavingsSolutionsCodeChallenge.Helpers
             var inputLongitude = requestCoordinates.Longitude;
 
             var pharmaciesDtos = new List<PharmacyDTO>();
-            // TODO Go through each pharmacy and find distance, adding that to a DTO with distance
+            // Go through each pharmacy and find distance, adding that to a DTO with distance
             foreach (var pharmacy in pharmacies)
             {
                 // Find distance from input coordinates

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RxSavingsSolutionsCodeChallenge.Domain;
+using RxSavingsSolutionsCodeChallenge.Domain.Models;
 using RxSavingsSolutionsCodeChallenge.Dtos;
 using RxSavingsSolutionsCodeChallenge.Helpers;
 
@@ -26,19 +27,15 @@ namespace RxSavingsSolutionsCodeChallenge.Controllers
         [HttpGet]
         public string Get()
         {
-            var test = _context.Pharmacies.ToList();
             return "Hello World";
         }
 
         [HttpPost]
-        public string Post(RequestCoordinates requestCoordinates)
+        public PharmacyResponseDTO Post(RequestCoordinates requestCoordinates)
         {
-            var inputLatitude = requestCoordinates.Latitude;
-            var inputLongitude = requestCoordinates.Longitude;
-
-
-            var distance = HaversineFormula.DistanceBetween(39.24517, -95.00031, 39.00175, -95.68697);
-            return "Post";
+            var pharmacies = _context.Pharmacies.ToList();
+            var response = PharmacyHelper.FindClosestPharmacy(pharmacies, requestCoordinates);
+            return response;
         }
     }
 }

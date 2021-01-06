@@ -7,7 +7,7 @@ namespace RxSavingsSolutionsCodeChallenge.Helpers
 {
     public static class HaversineFormula
     {
-        // https://stormconsultancy.co.uk/blog/storm-news/the-haversine-formula-in-c-and-sql/
+        // Haversine formula to use great circle https://stormconsultancy.co.uk/blog/storm-news/the-haversine-formula-in-c-and-sql/
         public static double DistanceBetween(double inputLatitude, double inputLongitude, double pharmacyLatitude, double pharmacyLongitude)
         {
             // Radius of the Earth

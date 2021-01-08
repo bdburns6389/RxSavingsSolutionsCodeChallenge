@@ -23,7 +23,3 @@
 # If using Docker:
 
 ### If you are more comfortable using Docker, open a terminal in the main project folder (the folder with the .sln file) and run 'docker-compose up'. This should start up both the web app and the database, allowing testing to work the same with Postman as a traditional setup.
-
-## Caveats
-
-#### If using WSL2 on Windows, the connection string in appsettings.json will most likely need to have a Server name of 'host.docker.internal', while an instance on Ubuntu will need a Server name of 'mssql_db', which is the container name in the docker compose file.

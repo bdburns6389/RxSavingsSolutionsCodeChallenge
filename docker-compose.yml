@@ -1,9 +1,10 @@
-version: "3.9"
+version: "3.3"
 services:
   db:
     build:
       context: ./
       dockerfile: Dockerfile
+    container_name: mssql_db
     volumes:
       - ./:/data
     ports:

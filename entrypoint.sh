@@ -1,0 +1,1 @@
+/opt/mssql/bin/sqlservr & /usr/work/import-data.sh & tail -f /dev/null
